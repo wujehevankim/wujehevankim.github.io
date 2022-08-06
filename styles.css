@@ -2,7 +2,12 @@ body {
     margin: 40px;
 }
 
-.logo{
-    width:50%;
-    height:50%;
+.logo {
+    width: 400px;
+    height: auto;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
 }

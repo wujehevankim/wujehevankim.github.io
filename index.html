@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alata&family=Jua&family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
     </style>
     <title>Bean. Find your best roomie.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     
@@ -27,13 +32,34 @@
 
     <div class="headline">
         <h1 class="catchphrase">
-            <br> <br> <br> Find your <br> <em class="emphasis">best roomie. </em>
+            <br> <br> Find your <br> <span class="best-roomie">best roomie. </span>
         </h1>
     </div>
 
-    <p class="description">
-        Moving to a new city?
-    </p>
+  
+
+
+    <div class="animated-heading">
+        <p class="spare-the">Spare the &nbsp;<span id="words" class="rotating-words">emotional stress.</span></p>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            var words = [
+                "emotional stress.",
+                "sketchy experience.",
+                "ruined friendships.",
+                "awkward conversations.",
+                "anxiety." 
+            ],
+            i = 0;
+            setInterval(function(){ 
+                $('#words').fadeOut(function(){
+                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                }); 
+            }, 4000)
+        })();
+    </script>
 
 
 

@@ -39,10 +39,11 @@ body {
 
 
 
-.emphasis {
+
+
+.best-roomie {
     color: #14d959;
     opacity: 1.0;
-
 }
 
 
@@ -58,3 +59,22 @@ body {
 }
 
 
+
+
+
+
+.spare-the {
+    display:flex;
+    align-items: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #303030;
+    opacity: 0.8;
+    font-size: 21px;
+    line-height: 99%;
+}
+
+
+.rotating-words {
+    color: #14d959;
+    font-weight: bolder;
+}

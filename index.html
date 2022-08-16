@@ -15,6 +15,7 @@
     <meta property="og:image:height" content="627" />
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -23,6 +24,58 @@
     
 </head>
 <body>
+
+    <div class="row no-gutters">
+        <div class="col-md-6 no-gutters">
+            <div class="leftside">
+                <a href="https://www.beanapp.xyz">
+                    <img class="top-left-logo" src="logo_4x.png" alt="Logo Bean" width="135px" />
+                </a>
+
+                <div class="headline">
+                    <h1 class="catchphrase">
+                        <br> <br> Find your <br> <span class="best-roomie">best roomie. </span>
+                    </h1>
+                </div>
+
+                <div class="new-line">.</div>
+
+                <div class="animated-heading">
+                    <p class="spare-the">No more &nbsp;<span id="words" class="rotating-words">emotional stress.</span></p>
+                </div>
+                
+                
+
+                <script type="text/javascript">
+                    (function () {
+                        var words = [
+                            "emotional stress.",
+                            "sketchy experiences.",
+                            "ruined friendships.",
+                            "awkward conversations.",
+                            "anxiety." 
+                        ],
+                        i = 0;
+                        setInterval(function(){ 
+                            $('#words').fadeOut(function(){
+                                $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                            }); 
+                        }, 4000)
+                    })();
+                </script>
+
+
+
+            </div>
+        </div>
+        <div class="col-md-6 no-gutters">
+            <div class="rightside"></div>
+        </div>
+
+    </div>
+
+
+
     <div class="header-bar">
         <div class="header-bar-column">
             <a href="https://www.beanapp.xyz">

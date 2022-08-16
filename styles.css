@@ -1,6 +1,6 @@
 
 body {
-    margin: 25px;
+    margin: 0px;
 }
 
 
@@ -24,6 +24,7 @@ body {
 .headline {
     display: flex;
     align-items: center;
+    margin-left: 25px;
     
 }
 
@@ -71,10 +72,44 @@ body {
     opacity: 0.8;
     font-size: 21px;
     line-height: 99%;
+    margin-left: 25px;
 }
 
 
 .rotating-words {
     color: #14d959;
     font-weight: bolder;
+}
+
+
+
+.leftside, .rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+
+@media screen and (min-width:768px)
+{
+    .leftside, .rightside {
+        height:100vh;
+    }
+}
+
+
+.leftside {
+    background:white;
+}
+
+.rightside {
+    background: #14d959;
+}
+
+
+.top-left-logo {
+    margin: 25px;
+}
+
+.new-line{
+    color: white;
 }

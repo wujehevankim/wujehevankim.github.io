@@ -28,41 +28,47 @@
     <div class="row no-gutters">
         <div class="col-md-6 no-gutters">
             <div class="leftside">
-                <a href="https://www.beanapp.xyz">
-                    <img class="top-left-logo" src="logo_4x.png" alt="Logo Bean" width="135px" />
-                </a>
-
-                <div class="headline">
-                    <h1 class="catchphrase">
-                        <br> Find your <br> <span class="best-roomie">best roomie. </span>
-                    </h1>
+                <div class="leftside-row-one">
+                    <a href="https://www.beanapp.xyz">
+                        <img class="top-left-logo" src="logo_4x.png" alt="Logo Bean" width="135px" />
+                    </a>    
                 </div>
 
-                <div class="new-line">.</div>
-
-                <div class="animated-heading">
-                    <p class="spare-the">No more &nbsp;<span id="words" class="rotating-words">emotional stress.</span></p>
+                <div class="leftside-row-two">
+                    <div class="headline">
+                        <h1 class="catchphrase">
+                            Find your <br> <span class="best-roomie">best roomie. </span>
+                        </h1>
+                    </div>
+    
+                    <div class="new-line">.</div>
+    
+                    <div class="animated-heading">
+                        <p class="spare-the">No more &nbsp;<span id="words" class="rotating-words">emotional stress.</span></p>
+                    </div>
+                    
+                    
+    
+                    <script type="text/javascript">
+                        (function () {
+                            var words = [
+                                "emotional stress.",
+                                "sketchy experiences.",
+                                "ruined friendships.",
+                                "awkward conversations.",
+                                "anxiety." 
+                            ],
+                            i = 0;
+                            setInterval(function(){ 
+                                $('#words').fadeOut(function(){
+                                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                                }); 
+                            }, 4000)
+                        })();
+                    </script>
+    
                 </div>
-                
-                
 
-                <script type="text/javascript">
-                    (function () {
-                        var words = [
-                            "emotional stress.",
-                            "sketchy experiences.",
-                            "ruined friendships.",
-                            "awkward conversations.",
-                            "anxiety." 
-                        ],
-                        i = 0;
-                        setInterval(function(){ 
-                            $('#words').fadeOut(function(){
-                                $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-                            }); 
-                        }, 4000)
-                    })();
-                </script>
 
 
 

@@ -88,8 +88,12 @@ body {
 
 
 .leftside, .rightside {
-    height: 95vh;
+    height: 85vh;
     width: 100%;
+}
+
+.rightside {
+    height: 120vh;
 }
 
 

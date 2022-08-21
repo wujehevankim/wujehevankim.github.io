@@ -68,12 +68,23 @@ body {
 
 
 
+.spare-the-no-more {
+    display:flex;
+    align-items: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+    opacity: 0.6;
+    font-size: 22px;
+    line-height: 99%;
+    margin-left: 25px;
+}
+
 .spare-the {
     display:flex;
     align-items: left;
     font-family: 'Open Sans', sans-serif;
-    color: #303030;
-    opacity: 0.8;
+    color: #14d959;
+    opacity: 1.0;
     font-size: 22px;
     line-height: 99%;
     margin-left: 25px;
@@ -81,10 +92,19 @@ body {
 
 
 .rotating-words {
-    color: #14d959;
-    font-weight: bolder;
+    color: #808080;
+    font-weight: lighter;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+
 }
 
+
+.rotating-words-a {
+    color: #14d959;
+    font-weight: bolder;
+    opacity: 1.0;
+}
 
 
 .leftside {

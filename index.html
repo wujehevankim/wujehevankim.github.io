@@ -43,7 +43,11 @@
                     <div class="new-line">.</div>
     
                     <div class="animated-heading">
-                        <p class="spare-the">No more &nbsp;<span id="words" class="rotating-words">emotional stress.</span></p>
+                        <p class="spare-the-no-more">No more &nbsp;<span id="words" class="rotating-words">sketchy DMs.</span></p>
+                    </div>
+
+                    <div class="animated-heading">
+                        <p class="spare-the">Say hi to &nbsp;<span id="wordsa" class="rotating-words-a">safe verifications.</span></p>
                     </div>
                     
                     
@@ -51,18 +55,32 @@
                     <script type="text/javascript">
                         (function () {
                             var words = [
-                                "emotional stress.",
-                                "sketchy experiences.",
-                                "ruined friendships.",
-                                "awkward convos.",
-                                "anxiety." 
+                                "sketchy DMs.",
+                                "last minute ghosting.",
+                                "awkward convos."
                             ],
                             i = 0;
                             setInterval(function(){ 
                                 $('#words').fadeOut(function(){
                                     $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
                                 }); 
-                            }, 4000)
+                            }, 5000)
+                        })();
+                    </script>
+
+                    <script type="text/javascript">
+                        (function () {
+                            var wordsa = [
+                                "safe verifications.",
+                                "discovery profiles.",
+                                "bean contracts."
+                            ],
+                            i = 0;
+                            setInterval(function(){ 
+                                $('#wordsa').fadeOut(function(){
+                                    $(this).html(wordsa[(i = (i + 1) % wordsa.length)]).fadeIn();
+                                }); 
+                            }, 5000)
                         })();
                     </script>
     

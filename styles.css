@@ -135,18 +135,18 @@ body {
 
 
 .leftside-row-one {
-    height: 28%;
+    height: 27%;
     display: flex;
 }
 
 
 .leftside-row-two {
-    height: 62%;
+    height: 61%;
 }
 
 
 .leftside-row-three {
-    height: 10%;
+    height: 12%;
     display: flex;
     align-items: center;
 }
@@ -197,7 +197,7 @@ a:hover{
     font-size: 26px;
     font-family: 'Alata', sans-serif;
     color: #303030;
-    opacity: 0.8;
+    opacity: 1.0;
     line-height: 125%;
 }
 

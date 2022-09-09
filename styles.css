@@ -20,6 +20,8 @@ body {
 
 .header-bar-columnR {
     width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-bar-column:nth-child(2) {

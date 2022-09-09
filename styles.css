@@ -14,8 +14,12 @@ body {
     margin-top: 17px;
 }
 
-.header-bar-column {
-    width: 50%;
+.header-bar-columnL {
+    width: 80%;
+}
+
+.header-bar-columnR {
+    width: 20%;
 }
 
 .header-bar-column:nth-child(2) {

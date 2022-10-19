@@ -11,10 +11,12 @@
         gtag('config', 'G-1C8ZCCF3WS');
     </script>
     
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alata&family=Jua&family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
     </style>
     
+
     <title>Bean. Find your best roomie.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
@@ -34,128 +36,125 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <script type="module" src="scripts.js"></script>
     
 </head>
 <body>
-
-    <div class="row no-gutters">
-        <div class="col-md-6 no-gutters">
-            <div class="leftside">
-                <div class="leftside-row-one">
-                    <a href="https://www.beanapp.xyz">
-                        <img class="top-left-logo" src="new_logo_4x.png" alt="Logo Bean" width="135px" />
-                    </a>    
-                </div>
-
-                <div class="leftside-row-two">
-                    <div class="headline">
-                        <h1 class="catchphrase">
-                            Find your <br> <span class="best-roomie">best roomie. </span>
-                        </h1>
-                    </div>
-    
-                    <div class="new-line">.</div>
-    
-                    <div class="animated-heading">
-                        <p class="spare-the-no-more">No more &nbsp;<span id="words" class="rotating-words">sketchy DMs.</span></p>
-                    </div>
-                    
-                    <!--
-                    <div class="animated-heading">
-                        <p class="spare-the">Say hi to &nbsp;<span id="wordsa" class="rotating-words-a">safe verifications.</span></p>
-                    </div>
-                    -->
-                    
-                    
-    
-                    <script type="text/javascript">
-                        (function () {
-                            var words = [
-                                "sketchy DMs.",
-                                "last minute ghosting.",
-                                "awkward convos."
-                            ],
-                            i = 0;
-                            setInterval(function(){ 
-                                $('#words').fadeOut(function(){
-                                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-                                }); 
-                            }, 5000)
-                        })();
-                    </script>
-
-
-                    <!--
-                    <script type="text/javascript">
-                        (function () {
-                            var wordsa = [
-                                "safe verifications.",
-                                "discovery profiles.",
-                                "bean contracts."
-                            ],
-                            i = 0;
-                            setInterval(function(){ 
-                                $('#wordsa').fadeOut(function(){
-                                    $(this).html(wordsa[(i = (i + 1) % wordsa.length)]).fadeIn();
-                                }); 
-                            }, 5000)
-                        })();
-                    </script>
-                    -->
-    
-                </div>
-
-
-                <div class="leftside-row-three">
-                    <img class="app-store-image" src="comingsoon_appstore.png" alt="Coming soon to the app store" width="141px" />
-                </div>
-
-
-
-
+    <div class="row">
+        <div class="leftside">
+            <div class="leftside-row-one">
+                <a href="https://www.beanapp.xyz">
+                    <img class="header-logo" src="new_logo_4x_white.png" alt="Logo Bean" width="155px" />
+                </a>
             </div>
-        </div>
-        <div class="col-md-6 no-gutters">
-            <div class="rightside css-selector">
-                <div class="rightside-row-one">
-                    <h1 class="mockup-explain">
-                        Moving to a new<br> <span class="mockup-explain-second-row">job, city, or school?</span>
+            <div class="leftside-row-two">
+                <div class="headline">
+                    <h1 class="catchphrase">
+                        Find your <br> best roomie. </span>
                     </h1>
-                    
-                    
                 </div>
-                
-                <div class="rightside-row-two">
-                    <img class="iphone_mockup_image" src="iphone_mockup_09072022.png" alt="Bean iPhone" width="255px" />
-                </div>
-                        
-                     
+            </div>
+            <div class="leftside-row-three">
+                <img class="app-store-image" src="comingsoon_appstore_1.png" alt="Coming soon to the app store" width="149px" />
             </div>
         </div>
 
+        <div class="newrightside">
+            <div class = "newrightside-row-one">
+                <h2 id="landingImageHeader">Customizable Bean Finder</h2>
+            </div>
+            <div class = "newrightside-row-two">
+                <p id="landingImageSubheader">filter by age, budget, etc.</p>
+            </div>
+            <div class = "newrightside-row-three">
+                <img id="phone" src="app_screenshot_1.png" width = "280px">
+            </div>
+        
+        </div>
+
+        <script type="text/javascript">
+            (function () {
+                var landingImageHeader = [
+                    "Customize your Bean Finder",
+                    "Preferences Questionnaire",
+                    "Direct Message"
+                ],
+                i = 0;
+                setInterval(function(){ 
+                    $('#landingImageHeader').fadeOut(function(){
+                        $(this).html(landingImageHeader[(i = (i + 1) % landingImageHeader.length)]).fadeIn();
+                    }); 
+                }, 3500)
+            })();
+        </script>
+
+        <script type="text/javascript">
+            (function () {
+                var landingImageSubheader = [
+                    "filter by age, budget, etc.",
+                    "so you find the best roomie",
+                    "other real-time photo verified Beans"
+                ],
+                i = 0;
+                setInterval(function(){ 
+                    $('#landingImageSubheader').fadeOut(function(){
+                        $(this).html(landingImageSubheader[(i = (i + 1) % landingImageSubheader.length)]).fadeIn();
+                    }); 
+                }, 3500)
+            })();
+        </script>
+        
+        
+        <script type="text/javascript">
+            var picPaths = ['app_screenshot_1.png','app_screenshot_2.png','app_screenshot_3.png'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,3500);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('phone');
+                swapImage();
+            }
+        </script>
+
+        <div class="header-bar">
+            <div class="header-bar-columnL">
+                <a class="contact-us" href="mailto:evan.kim@duke.edu">
+                    Contact us
+                </a>
+
+                <span>
+                    •
+                </span>
+                <a class="contact-us" href="https://wearebean.notion.site/Meet-Team-Bean-e4ff18fad98948d3b25040b88e212212">
+                    Team Bean
+                </a>
+            </div>
+            <div class="header-bar-columnR">
+                <a href="https://www.linkedin.com/company/wearebean" target="_blank">
+                    <img src="linkedin_logo_1.5x.png" alt="LinkedIn Bean" width = "21px"/>
+                </a>
+            </div>
+        </div>
+
+
+
     </div>
 
+   
 
-
-    <div class="header-bar">
-        <div class="header-bar-columnL">
-            <a class="contact-us" href="mailto:evan.kim@duke.edu">
-                Contact us
-            </a>
-
-            <span>
-                •
-            </span>
-            <a class="contact-us" href="https://wearebean.notion.site/Meet-Team-Bean-e4ff18fad98948d3b25040b88e212212">
-                Team Bean
-            </a>
-        </div>
-        <div class="header-bar-columnR">
-            <a href="https://www.linkedin.com/company/wearebean" target="_blank">
-                <img src="linkedin_logo_1.5x.png" alt="LinkedIn Bean" width = "21px"/>
-            </a>
-        </div>
-    </div>
+    
+    
 
 
     

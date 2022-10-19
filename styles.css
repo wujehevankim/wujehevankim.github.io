@@ -128,7 +128,7 @@ body {
     margin-bottom: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #666666;
     opacity: 0.9;
@@ -144,7 +144,11 @@ body {
     }
     .newrightside {
         width: 100%;
-        height: 110vh;
+        height: 130vh;
+    }
+    .header-bar{
+        width: 100%;
+        height: 50vh;
     }
 }
 

@@ -84,8 +84,8 @@
                 ],
                 i = 0;
                 setInterval(function(){ 
-                    $('#landingImageHeader').fadeOut(function(){
-                        $(this).html(landingImageHeader[(i = (i + 1) % landingImageHeader.length)]).fadeIn();
+                    $('#landingImageHeader').fadeOut("fast", function(){
+                        $(this).html(landingImageHeader[(i = (i + 1) % landingImageHeader.length)]).fadeIn("fast");
                     }); 
                 }, 3500)
             })();
@@ -100,8 +100,8 @@
                 ],
                 i = 0;
                 setInterval(function(){ 
-                    $('#landingImageSubheader').fadeOut(function(){
-                        $(this).html(landingImageSubheader[(i = (i + 1) % landingImageSubheader.length)]).fadeIn();
+                    $('#landingImageSubheader').fadeOut("fast", function(){
+                        $(this).html(landingImageSubheader[(i = (i + 1) % landingImageSubheader.length)]).fadeIn("fast");
                     }); 
                 }, 3500)
             })();
